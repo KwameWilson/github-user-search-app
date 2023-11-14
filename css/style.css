@@ -15,6 +15,7 @@ span {
     display: inline-block;
 }
 
+
 .container {
     /* background: tomato; */
     width: 730px;
@@ -151,6 +152,7 @@ main .container-flex {
     background: #F6F8FF;
     padding: 15px 83px 17px 32px;
     border-radius: 15px;
+    margin-bottom: 37px;
 }
 
 .stats__grid-item h4 {
@@ -170,4 +172,25 @@ main .container-flex {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+}
+
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 53px;
+    grid-row-gap: 19px;
+}
+
+.social h3 {
+    display: inline-block;
+    color: #4B6A9B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.social .twitter h3 {
+    color: #697C9A;
 }
