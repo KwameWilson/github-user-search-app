@@ -8,10 +8,15 @@
 
 body {
     background: #F6F8FF;
+    font-family: "Space Mono";
+}
+
+span {
+    display: inline-block;
 }
 
 .container {
-    background: tomato;
+    /* background: tomato; */
     width: 730px;
     margin: 144px auto 170px;
 }
@@ -19,8 +24,8 @@ body {
 .mode-switcher {
     display: flex;
     justify-content: space-between;
-    background: #fff;
-
+    /* background: #fff; */
+    margin-bottom: 36px;
 }
 
 .toggle {
@@ -30,5 +35,139 @@ body {
 }
 
 .toggle h3 {
+    text-transform: uppercase;
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input[type="text"] {
+    border: 0;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border-radius: 15px;
+    height: 69px;
+    width: 100%;
+    padding: 9.5px 10px 9.5px 80px;
+}
+
+input[placeholder="Search GitHub username…"] {
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+span.magnifying-glass {
+    position: absolute;
+    left: 32px;
+    top: 23px;
+}
+
+.search-bar a {
+
+    border-radius: 10px;
+    background: #0079FF;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 13px 23.5px;
+    line-height: normal;
+    text-decoration: none;
+    position: absolute;
+    top: 9.5px;
+    right: 10px;
+}
+
+
+main.profile-grid {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    padding: 48px;
+
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 37px;
+    justify-content: start;
+}
+
+main .container-flex {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profile-name {
+    margin-bottom: 20px;
+}
+
+.profile-name h1 {
+    color: #2B3442;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-name h4.handle {
+    color: #0079FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.date {
+    /* border: 2px solid red; */
+    color: #697C9A;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bio {
+    /* border: 2px solid blue; */
+    color: #4B6A9B;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 82px;
+    background: #F6F8FF;
+    padding: 15px 83px 17px 32px;
+    border-radius: 15px;
+}
+
+.stats__grid-item h4 {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stats__grid-item h2 {
+    color: #2B3442;
+
+    font-family: Space Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
 }
